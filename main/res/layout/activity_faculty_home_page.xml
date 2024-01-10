@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".FacultyHomePageActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="243dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center"
+        android:text="@string/faculty"
+        android:textColor="#F8FAFA"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Allocated Class TextView -->
+    <TextView
+        android:id="@+id/allocatedClassLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Allocated Class:"
+        android:textColor="#F8FAFA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Spinner to display the allocated class options -->
+    <Spinner
+        android:id="@+id/allocatedClassSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/allocatedClassLabelTextView" />
+
+    <!-- Subject TextView -->
+    <TextView
+        android:id="@+id/SubjectLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="99dp"
+        android:text="Subject:"
+        android:textColor="#F8FAFA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- TextView to display the allocated class name -->
+    <TextView
+        android:id="@+id/SubjectTextView"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="98dp"
+        android:layout_toEndOf="@+id/SubjectLabelTextView"
+        android:text=""
+        android:textColor="#F8FAFA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="228dp"
+        android:text="@string/attendance" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/timetable" />
+
+</RelativeLayout>

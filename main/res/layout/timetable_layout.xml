@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timetable"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTextView"
+        android:layout_above="@+id/buttonLayout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <!-- Table header -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Time"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Monday"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tuesday"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wednesday"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/thursday9amText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thursday"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Friday"
+                    android:textStyle="bold" />
+
+                <!-- Add more days as needed -->
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/monday9amText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9-10 am"
+                    android:padding="8dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/monday9amSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:enabled="false"
+                    android:minWidth="200dp"
+                    android:scrollbarSize="48dp"/>
+
+                <Spinner
+                    android:id="@+id/tuesday9amSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:enabled="false"/>
+
+                <Spinner
+                    android:id="@+id/wednesday9amSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:enabled="false"/>
+
+                <Spinner
+                    android:id="@+id/thursday9amSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:enabled="false"/>
+
+                <Spinner
+                    android:id="@+id/friday9amSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:enabled="false"/>
+
+                <!-- Add more days as needed -->
+
+            </TableRow>
+
+            <!-- Time slots -->
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9-10 pm"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/monday9am"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/tuesday9am"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/wednesday9am"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/thursday9am"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/friday9am"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <!-- Add more time slots as needed -->
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10-11 pm"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/monday10am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/tuesday10am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/wednesday10am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/thursday10am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/friday10am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <!-- Add more time slots as needed -->
+
+            </TableRow>
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="20 mins" />
+
+                <TextView
+                    android:id="@+id/break1"
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="8dp"
+                    android:text="Break"
+                    android:textAlignment="center"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11:20-12:20 am"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/monday11am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/tuesday11am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/wednesday11am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/thursday11am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/friday11am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <!-- Add more time slots as needed -->
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12:20- 1:20 am"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/monday12am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/tuesday12am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/wednesday12am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/thursday12am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/friday12am"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <!-- Add more time slots as needed -->
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="40 mins" />
+
+                <TextView
+                    android:id="@+id/break2"
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="8dp"
+                    android:text="Break"
+                    android:textAlignment="center"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2-3pm"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/monday2pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/tuesday2pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/wednesday2pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/thursday2pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/friday2pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <!-- Add more time slots as needed -->
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3-4 pm"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/monday3pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/tuesday3pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/wednesday3pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/thursday3pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/friday3pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <!-- Add more time slots as needed -->
+
+            </TableRow>
+
+            <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4-5 pm"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/monday4pm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/tuesday4pm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/wednesday4pm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/thursday4pm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/friday4pm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+            </TableRow>
+
+
+
+
+
+
+
+
+
+
+            <!-- Add more rows for different time slots -->
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/editbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:layout_margin="16dp" />
+
+        <Button
+            android:id="@+id/savebutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:layout_margin="16dp"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/cancelbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:layout_margin="16dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

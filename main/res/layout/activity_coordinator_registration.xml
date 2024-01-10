@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoordinatorRegistrationActivity">
+
+    <TextView
+        android:id="@+id/collegeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/coordinator_register"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/editTextCoordinatorUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/editTextCoordinatorPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCoordinatorUserId"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/phone"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextCoordinatorEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCoordinatorPhone"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCoordinatorPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCoordinatorEmail"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/password">
+
+        <EditText
+            android:id="@+id/editTextCoordinatorPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/ic_eye_toggle"
+            android:drawablePadding="8dp"
+            android:shadowColor="@color/white"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Eye toggle button -->
+    <ImageButton
+        android:id="@+id/eyeButton"
+        android:layout_width="21dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textInputLayoutCoordinatorPassword"
+        android:layout_alignEnd="@id/textInputLayoutCoordinatorPassword"
+        android:layout_alignBottom="@id/textInputLayoutCoordinatorPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_eye_toggle" />
+
+
+    <Button
+        android:id="@+id/buttonCoordinatorCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="110dp"
+        android:text="@string/create" />
+
+    <Button
+        android:id="@+id/buttonCoordinatorGoToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="195dp"
+        android:text="@string/to_login" />
+
+</RelativeLayout>

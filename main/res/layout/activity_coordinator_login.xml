@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoordinatorLoginActivity">
+
+
+    <TextView
+        android:id="@+id/collegeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/coordinator_login"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextCoordinatorUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collegeName"
+        android:layout_marginTop="198dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/email"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextCoordinatorPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCoordinatorUsername"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonCoordinatorLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCoordinatorPassword"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/buttonCoordinatorRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCoordinatorLogin"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/buttonForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCoordinatorRegister"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/forgot_password" />
+</RelativeLayout>
